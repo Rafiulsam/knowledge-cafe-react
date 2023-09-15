@@ -4,6 +4,7 @@
     "published_date": "Mar 07 2022",
     "author_name": "Evelyn Burks",
     "blog_title": "Starting Your Programming Journey: A Beginner's Guide.",
+    "img": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
     "read_time": 5
   },
   {
@@ -11,6 +12,7 @@
     "published_date": "Jan 12 2023",
     "author_name": "Craig Mcpherson",
     "blog_title": "Becoming a Coder: Simple Steps for Beginners.",
+    "img" :"https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
     "read_time": 7
   },
   {
@@ -18,6 +20,7 @@
     "published_date": "Oct 15 2022",
     "author_name": "Jefferson Barr",
     "blog_title": "From Zero to Programmer: Your Roadmap to Success.",
+    "img":"https://cdn.eduadvisor.my/articles/2020/08/Online-Coding-Lesson-Feature-Image.png",
     "read_time": 5
   },
   {
@@ -25,6 +28,7 @@
     "published_date": "Aug 20 2022",
     "author_name": "Conley Horne",
     "blog_title": "Programming Basics: A Step-by-Step Guide for Newbies.",
+    "img":"https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "read_time": 8
   }
 ]
