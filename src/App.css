@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap');
+
+/* #root {
+  max-width: 1280px;
+  
+  
+  
+} */
+
+h1{
+  font-family: 'Exo 2', sans-serif;
+}
+
+
+
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
