@@ -1,9 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+
 const Blog = (props) => {
-    console.log(props.blog);
     const { img, author_name, author_img, blog_title, published_date, read_time } = props.blog;
+    const addReadTime = props.addReadTime
     return (
         <div className='mb-10'>
             <img className='h-[400px] w-full rounded-lg' src={img} alt="" />
@@ -22,7 +23,7 @@ const Blog = (props) => {
             </div>
             <h1 className='mt-5 font-bold text-3xl'>{blog_title}</h1>
             <p className='mt-4 mb-5'>#beginners  #programming</p>
-            <a className='underline' href="">Mark as read</a>
+            <button onClick={()=> addReadTime(props.blog)} className='underline text-[#6047EC] font-semibold' href="">Mark as read</button>
             <hr  className='mt-8'/>
         </div>
     );

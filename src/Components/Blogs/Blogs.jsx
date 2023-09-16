@@ -10,16 +10,25 @@ const Blogs = () => {
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [])
+        
+        const [blog, setBlog] = useState([])
+        const addReadTime = (blogs)=>{
+            const newBlog =[...blog, blogs]
+           setBlog(newBlog)
+           
+            
+        }
+
     return (
         <div className='mx-auto max-w-5xl border-b pb-8 mt-12 grid grid-flow-col gap-6'>
             <div>
                 {
-                    blogs.map(blog => <Blog blog={blog}></Blog>)
+                    blogs.map(blog => <Blog addReadTime={addReadTime} blog={blog} key={blog.id}></Blog>)
                 }
             </div>
             <div>
-                <SpentTime></SpentTime>
-                <Bookmarks></Bookmarks>
+                <SpentTime blog={blog} ></SpentTime>
+                <Bookmarks ></Bookmarks>
             </div>
         </div>
     );
