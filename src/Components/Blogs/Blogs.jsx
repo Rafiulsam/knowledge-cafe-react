@@ -5,6 +5,7 @@ import SpentTime from '../SpentTime/SpentTime';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const customId = "custom-id-yes";
+const customToast = "mx-auto w-80 lg:w-full";
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   const [readTime, setReadTime] = useState([]);
@@ -23,7 +24,7 @@ const Blogs = () => {
   const addToBookmark = (blog) => {
     
     if (bookmarkedBlogs.has(blog)) {
-      toast.info('This blog is already bookmarked', {
+      toast.warn('This blog is already added to the bookmark', {
         toastId: customId,
         position: "top-center",
         autoClose: 1000,
@@ -32,6 +33,7 @@ const Blogs = () => {
         pauseOnHover: true,
         draggable: false,
         theme: "light",
+        className: customToast
       });
 
     }
@@ -42,7 +44,7 @@ const Blogs = () => {
   };
 
   return (
-    <div className='mx-auto max-w-5xl border-b pb-8 mt-12 grid grid-flow-col gap-6 relative'>
+    <div className='mx-auto max-w-xs lg:max-w-5xl border-b pb-8 mt-12 lg:grid grid-flow-col gap-6 relative'>
       <div>
         {blogs.map((blog) => (
           <Blog
@@ -54,25 +56,25 @@ const Blogs = () => {
         ))}
       </div>
       <div>
-        <div className='sticky top-5 w-96'>
+        <div className='sticky top-5 lg:w-96'>
           <SpentTime readTime={readTime}></SpentTime>
           <Bookmarks bookmarkedBlogs={bookmarkedBlogs}></Bookmarks>
         </div>
-        <ToastContainer
-        position="top-center"
-        autoClose={1000}
-        limit={1}
-        hideProgressBar
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss={false}
-        draggable ={false}
-        pauseOnHover
-        theme="light"
-      />
+          <ToastContainer
+            position="top-center"
+            autoClose={1000}
+            limit={1}
+            hideProgressBar
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss={false}
+            draggable={false}
+            pauseOnHover
+            theme="light"
+          />
       </div>
-     </div>
+    </div>
   );
 };
 

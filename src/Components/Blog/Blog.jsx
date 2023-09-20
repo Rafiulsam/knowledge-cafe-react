@@ -5,16 +5,16 @@ const Blog = ({ blog, addReadTime, addToBookmark}) => {
   const { img, author_name, author_img, blog_title, published_date, read_time } = blog;
   return (
     <div className='mb-10'>
-      <img className='h-[400px] w-full rounded-lg' src={img} alt='' />
-      <div className='mt-8 flex justify-between items-center '>
-        <div className='flex gap-6 items-center'>
+      <img className='h-[176px] lg:h-[400px] w-full rounded-lg' src={img} alt='' />
+      <div className='mt-8 flex justify-between lg:items-center '>
+        <div className='flex gap-1 lg:gap-6 items-center'>
           <img className='w-14' src={author_img} alt='' />
           <div>
             <h1>{author_name}</h1>
             <p>{published_date}</p>
           </div>
         </div>
-        <div className='flex gap-1'>
+        <div className='flex items-start gap-1'>
           <p>{read_time} min read</p>
           <button onClick={() => addToBookmark(blog)}>
             <IconChange></IconChange>
