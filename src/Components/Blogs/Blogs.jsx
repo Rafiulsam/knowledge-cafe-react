@@ -58,8 +58,7 @@ const Blogs = () => {
           <SpentTime readTime={readTime}></SpentTime>
           <Bookmarks bookmarkedBlogs={bookmarkedBlogs}></Bookmarks>
         </div>
-      </div>
-      <ToastContainer
+        <ToastContainer
         position="top-center"
         autoClose={1000}
         limit={1}
@@ -72,7 +71,8 @@ const Blogs = () => {
         pauseOnHover
         theme="light"
       />
-    </div>
+      </div>
+     </div>
   );
 };
 

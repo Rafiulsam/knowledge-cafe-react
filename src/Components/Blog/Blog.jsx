@@ -1,7 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookmark as solidBookmark } from '@fortawesome/free-solid-svg-icons';
-import { faBookmark as regularBookmark } from '@fortawesome/free-regular-svg-icons';
+import IconChange from '../IconChange/IconChange';
 
 const Blog = ({ blog, addReadTime, addToBookmark}) => {
   const { img, author_name, author_img, blog_title, published_date, read_time } = blog;
@@ -19,7 +17,7 @@ const Blog = ({ blog, addReadTime, addToBookmark}) => {
         <div className='flex gap-1'>
           <p>{read_time} min read</p>
           <button onClick={() => addToBookmark(blog)}>
-            <FontAwesomeIcon icon={regularBookmark} />
+            <IconChange></IconChange>
           </button>
         </div>
       </div>
