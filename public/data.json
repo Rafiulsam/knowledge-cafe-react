@@ -3,7 +3,7 @@
     "id": "65036713490b9afa7667e310",
     "published_date": "Mar 07 2022",
     "author_name": "Evelyn Burks",
-    "author_img":"../src/images/boy1.png",
+    "author_img":"images/boy1.png",
     "blog_title": "Starting Your Programming Journey: A Beginner's Guide.",
     "img": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
     "read_time": 5
@@ -12,7 +12,7 @@
     "id": "65036713acc1b1d81ae447fc",
     "published_date": "Jan 12 2023",
     "author_name": "Craig Mcpherson",
-    "author_img":"../src/images/boy2.png",
+    "author_img":"images/boy2.png",
     "blog_title": "Becoming a Coder: Simple Steps for Beginners.",
     "img" :"https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
     "read_time": 7
@@ -21,7 +21,7 @@
     "id": "6503671387d1dd1ebf1bc1a6",
     "published_date": "Oct 15 2022",
     "author_name": "Jefferson Barr",
-    "author_img":"../src/images/girl1.jpg",
+    "author_img":"images/girl1.jpg",
     "blog_title": "From Zero to Programmer: Your Roadmap to Success.",
     "img":"https://cdn.eduadvisor.my/articles/2020/08/Online-Coding-Lesson-Feature-Image.png",
     "read_time": 5
@@ -30,7 +30,7 @@
     "id": "650367135ef2b80633c8c583",
     "published_date": "Aug 20 2022",
     "author_name": "Conley Horne",
-    "author_img":"../src/images/girl2.jpg",
+    "author_img":"images/girl2.jpg",
     "blog_title": "Programming Basics: A Step-by-Step Guide for Newbies.",
     "img":"https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "read_time": 8
