@@ -5,7 +5,8 @@ import SpentTime from '../SpentTime/SpentTime';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const customId = "custom-id-yes";
-const customToast = "mx-auto w-80 lg:w-full";
+const customWidth = "mx-auto w-80 lg:w-full";
+
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   const [readTime, setReadTime] = useState([]);
@@ -20,9 +21,9 @@ const Blogs = () => {
   const addReadTime = (time) => {
     setReadTime([...readTime, time]);
   };
-  
+
   const addToBookmark = (blog) => {
-    
+
     if (bookmarkedBlogs.has(blog)) {
       toast.warn('This blog is already added to the bookmark', {
         toastId: customId,
@@ -33,7 +34,7 @@ const Blogs = () => {
         pauseOnHover: true,
         draggable: false,
         theme: "light",
-        className: customToast
+        className: customWidth
       });
 
     }
@@ -46,12 +47,13 @@ const Blogs = () => {
   return (
     <div className='mx-auto max-w-xs lg:max-w-5xl border-b pb-8 mt-12 lg:grid grid-flow-col gap-6 relative'>
       <div>
-        {blogs.map((blog) => (
+        {blogs.map((blog, i) => (
           <Blog
-            key={blog.id}
+            key={i}
             addToBookmark={addToBookmark}
             addReadTime={addReadTime}
             blog={blog}
+            isLast={i === blogs.length - 1}
           ></Blog>
         ))}
       </div>
@@ -60,19 +62,19 @@ const Blogs = () => {
           <SpentTime readTime={readTime}></SpentTime>
           <Bookmarks bookmarkedBlogs={bookmarkedBlogs}></Bookmarks>
         </div>
-          <ToastContainer
-            position="top-center"
-            autoClose={1000}
-            limit={1}
-            hideProgressBar
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss={false}
-            draggable={false}
-            pauseOnHover
-            theme="light"
-          />
+        <ToastContainer
+          position="top-center"
+          autoClose={1000}
+          limit={1}
+          hideProgressBar
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss={false}
+          draggable={false}
+          pauseOnHover
+          theme="light"
+        />
       </div>
     </div>
   );

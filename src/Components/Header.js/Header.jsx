@@ -1,5 +1,5 @@
 import React from 'react';
-import png from '../../../public/images/profile.png'
+import png from '/images/profile.png'
 
 const Header = () => {
     return (

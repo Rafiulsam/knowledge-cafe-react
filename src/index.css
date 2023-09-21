@@ -12,6 +12,7 @@
 }
 
 a {
+  
   font-weight: 500;
   color: #6047EC;
   text-decoration: inherit;
@@ -21,6 +22,7 @@ a:hover {
 }
 
 body {
+  font-family: 'Exo 2', sans-serif;
   margin: 0;
  
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import IconChange from '../IconChange/IconChange';
 
-const Blog = ({ blog, addReadTime, addToBookmark}) => {
+const Blog = ({ blog, addReadTime, addToBookmark, isLast }) => {
   const { img, author_name, author_img, blog_title, published_date, read_time } = blog;
   return (
     <div className='mb-10'>
@@ -26,7 +26,7 @@ const Blog = ({ blog, addReadTime, addToBookmark}) => {
       <button onClick={() => addReadTime(blog)} className='underline text-[#6047EC] font-semibold' href=''>
         Mark as read
       </button>
-      <hr className='mt-8' />
+      {isLast ? null : <hr className='mt-8' />}
     </div>
   );
 };
